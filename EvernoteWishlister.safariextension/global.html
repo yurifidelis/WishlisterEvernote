@@ -1,0 +1,57 @@
+<html>
+
+<head>
+</head>
+
+<script>
+
+// Function to perform when event is received
+function performCommand(event) {
+    // Make sure event comes from the button
+    if (event.command == "clip") {
+        var newTab = safari.application.activeBrowserWindow.openTab(); // Open a new tab
+        newTab.url = "http://net.tutsplus.com/"; // Set tab URL to nettuts
+		
+		// Checks user's account/shows login pop-over
+		
+		
+		// Shows product formatting in page
+		/* Needs to extract from page:
+		* - product image
+		* - product title
+		* - price
+		* - shipping cost
+		* - details
+		*/
+		var currentWindow = safari.application.activeBrowserWindow;
+	   	var currentTab = currentWindow.activeTab;
+		var currentTabUrl = encodeURIComponent(currentTab.url);
+		var currentTabTitle = encodeURIComponent(currentTab.title);
+		
+		/* Shows clipping pop-over with options:
+		* - notebook to save
+		* - tags
+		* - custom description
+		*/
+		
+		// Save to Evernote	
+		var evernoteTab = currentWindow.openTab();
+    }
+}
+
+function validateCommand(event) {
+	if (event.command === "clip") {
+        // Disable the button if there is no URL loaded in the tab.
+        event.target.disabled = !event.target.browserWindow.activeTab.url;
+		
+		//TODO: Disable button if the page is not a supported product page
+    }
+}
+
+// Set up the Listener
+safari.application.addEventListener("command", performCommand, false);
+safari.application.addEventListener("validate", performCommand, false);
+
+</script>
+
+</html>

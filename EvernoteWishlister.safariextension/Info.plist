@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Yuri Pinto</string>
+	<key>Builder Version</key>
+	<string>10600.3.18</string>
+	<key>CFBundleDisplayName</key>
+	<string>Wishlister for Evernote</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yuripinto.evernotewishlister</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>clip</string>
+				<key>Identifier</key>
+				<string>contextualClip</string>
+				<key>Title</key>
+				<string>Clip with Wishlister</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>clip</string>
+				<key>Identifier</key>
+				<string>clipButton</string>
+				<key>Image</key>
+				<string>button.png</string>
+				<key>Label</key>
+				<string>Wishlist-it</string>
+				<key>Tool Tip</key>
+				<string>Clip with Wishlister</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict/>
+		<key>Stylesheets</key>
+		<array>
+			<string>ebay.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Formats product pages and adds to your Evernote wishlist</string>
+	<key>DeveloperIdentifier</key>
+	<string>9NCUR5895X</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.ebay.com/</string>
+			</array>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://yuri-fidelis.tumblr.com/</string>
+</dict>
+</plist>
